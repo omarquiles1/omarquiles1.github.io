@@ -47,5 +47,4 @@ Playwright usa Microsoft Edge por defecto; se cambia con la variable `PW_CHANNEL
 ## Estructura
 
 - `assets/` contiene CSS, JS, fuentes IBM Plex (licencia OFL), imágenes y CV.
-- `.github/workflows/links.yml` revisa enlaces rotos cada lunes con lychee y abre un issue si encuentra alguno.
 - `CNAME.disabled` deja preparado `omarquiles.is-a.dev`, sin activar.
