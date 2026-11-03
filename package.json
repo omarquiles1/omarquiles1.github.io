@@ -1,0 +1,18 @@
+{
+  "name": "omarquiles1.github.io",
+  "private": true,
+  "type": "module",
+  "description": "Herramientas locales de la web personal. GitHub Pages no las usa: sirve los HTML generados tal cual.",
+  "scripts": {
+    "render": "node scripts/render.mjs",
+    "serve": "python -m http.server 8080",
+    "check": "node scripts/check.mjs",
+    "og": "node scripts/og.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/ibm-plex-mono": "5.1.1",
+    "@fontsource/ibm-plex-sans": "5.1.1",
+    "playwright": "1.49.1",
+    "sharp": "0.33.5"
+  }
+}

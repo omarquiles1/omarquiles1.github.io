@@ -1,0 +1,39 @@
+{
+  "name": "Omar Quiles García",
+  "pronouns": "he/him",
+  "email": "quilesgo05@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/omarquilesgarc%C3%ADa/",
+  "github": "https://github.com/omarquiles1",
+  "site": "https://omarquiles1.github.io",
+  "photo": "/assets/img/omar",
+  "location": { "es": "Asturias, España", "en": "Asturias, Spain" },
+  "headline": {
+    "es": "Estudiante de Ingeniería en Tecnologías Industriales · Becario de investigación en IUTA (energías renovables) · Simulación de fluidos, hardware e IA aplicada.",
+    "en": "Industrial Technologies Engineering Student · Research Scholar at IUTA (Renewables) · Fluid simulation, hardware & applied AI."
+  },
+  "role": {
+    "es": "Ingeniería industrial · fluidos · hardware · software",
+    "en": "Industrial engineering · fluids · hardware · software"
+  },
+  "metaDescription": {
+    "es": "Omar Quiles García: estudiante de 4.º de Ingeniería en Tecnologías Industriales (Universidad de Oviedo) y becario de investigación en IUTA sobre aerogeneradores de eje vertical. Simulación de fluidos, hardware e IA aplicada.",
+    "en": "Omar Quiles García: 4th-year Industrial Technologies Engineering student (University of Oviedo) and research scholar at IUTA working on vertical axis wind turbines. Fluid simulation, hardware and applied AI."
+  },
+  "about": {
+    "es": [
+      "Soy estudiante de 4.º curso del Grado Bilingüe en Ingeniería en Tecnologías Industriales en la Universidad de Oviedo (Escuela Politécnica de Ingeniería de Gijón). Me interesa el punto donde se unen la ingeniería mecánica e industrial clásica (fluidos, instalaciones, industria pesada) y el software.",
+      "Trabajo con programación, datos, simulación e IA para analizar y mejorar sistemas físicos. Ahora mismo lo hago como becario de investigación en el grupo FERES del IUTA, sobre la aerodinámica de los aerogeneradores de eje vertical.",
+      "He pasado por una planta siderúrgica, por una oficina técnica de instalaciones y por un laboratorio de electrónica en Turquía, y en octubre de 2026 gané Hackea Avilés con mi equipo. Me gusta que lo que calculo acabe funcionando en el mundo real."
+    ],
+    "en": [
+      "I am a 4th-year student of the Bilingual Degree in Industrial Technologies Engineering at the University of Oviedo (Gijón Polytechnic School of Engineering). I am interested in the place where classic mechanical and industrial engineering (fluids, building services, heavy industry) meets software.",
+      "I use programming, data, simulation and AI to analyse and improve physical systems. Right now I do this as a research scholar in the FERES group at IUTA, working on the aerodynamics of vertical axis wind turbines.",
+      "I have worked in a steel plant, in a building-services engineering office and in an electronics lab in Turkey, and in October 2026 my team won Hackea Avilés. I like it when what I calculate ends up working in the real world."
+    ]
+  },
+  "cv": {
+    "available": false,
+    "es": "/assets/cv/CV_Omar_Quiles_ES.pdf",
+    "en": "/assets/cv/CV_Omar_Quiles_EN.pdf"
+  }
+}

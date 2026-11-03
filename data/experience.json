@@ -1,0 +1,87 @@
+{
+  "experience": [
+    {
+      "id": "iuta",
+      "org": "IUTA · Universidad de Oviedo",
+      "title": { "es": "Research Scholar, Fluids Engineering for Renewable Energy (FERES)", "en": "Research Scholar, Fluids Engineering for Renewable Energy (FERES)" },
+      "when": { "es": "sept. 2026 – actualidad", "en": "Sep 2026 – present" },
+      "where": { "es": "Gijón · híbrido · media jornada", "en": "Gijón · hybrid · part-time" },
+      "points": {
+        "es": [
+          "Investigación sobre el comportamiento aerodinámico y estructural y la optimización de aerogeneradores de eje vertical (VAWT).",
+          "Modelado con un código de doble tubo de corriente (DMST) en MATLAB y polares aerodinámicas generadas con XFOIL automatizado desde Python."
+        ],
+        "en": [
+          "Research on the aerodynamic and structural behaviour and the optimisation of vertical axis wind turbines (VAWT).",
+          "Modelling with a double-multiple streamtube (DMST) code in MATLAB and aerodynamic polars generated with XFOIL automated from Python."
+        ]
+      }
+    },
+    {
+      "id": "runitec",
+      "org": "Runitec Ingenieros",
+      "title": { "es": "Prácticas en el departamento de ingeniería (oficina técnica de instalaciones)", "en": "Engineering intern (building-services engineering office)" },
+      "when": { "es": "verano 2026 · 301 h", "en": "Summer 2026 · 301 h" },
+      "where": { "es": "Asturias", "en": "Asturias" },
+      "points": {
+        "es": [
+          "Planos en AutoCAD de arquitectura e instalaciones, sobre todo para obra pública.",
+          "Primeras partidas de presupuesto con Presto y lectura de catálogos comerciales.",
+          "Cálculo de BIE (protección contra incendios), fontanería y saneamiento con programas específicos ejecutados en una máquina virtual (VirtualBox).",
+          "Apoyo en memorias y cálculos de instalaciones."
+        ],
+        "en": [
+          "AutoCAD drawings of architecture and building services, mainly for public works.",
+          "First budget items in Presto and reading of manufacturers' catalogues.",
+          "Fire hose reel (BIE) fire-protection, water supply and drainage calculations with dedicated programs run in a virtual machine (VirtualBox).",
+          "Support with technical reports and building-services calculations."
+        ]
+      }
+    },
+    {
+      "id": "daorje",
+      "org": "Grupo DAORJE · en ArcelorMittal",
+      "title": { "es": "Prácticas de ingeniería en planta", "en": "Plant engineering intern" },
+      "when": { "es": "jul. – sept. 2025", "en": "Jul – Sep 2025" },
+      "where": { "es": "Asturias · en planta", "en": "Asturias · on site" },
+      "points": {
+        "es": [
+          "Isometrías de tuberías y pruebas de presión en planta.",
+          "Aprendizaje del proceso siderúrgico y de las instalaciones de la planta y su dinámica de producción.",
+          "Prevención de riesgos laborales (PRL), ejecución de obra nueva y sus planos."
+        ],
+        "en": [
+          "Piping isometrics and on-site pressure tests.",
+          "Learned the steelmaking process, the plant's installations and how production runs.",
+          "Occupational health and safety, execution of new-build works and their drawings."
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "title": { "es": "Grado Bilingüe en Ingeniería en Tecnologías Industriales", "en": "Bilingual Degree in Industrial Technologies Engineering" },
+      "org": { "es": "Universidad de Oviedo · Escuela Politécnica de Ingeniería de Gijón", "en": "University of Oviedo · Gijón Polytechnic School of Engineering" },
+      "when": { "es": "En curso · 4.º curso (2026-27)", "en": "In progress · 4th year (2026-27)" },
+      "note": { "es": "3.º curso aprobado.", "en": "3rd year passed." }
+    },
+    {
+      "title": { "es": "Erasmus+ · curso completo de 3.º", "en": "Erasmus+ · full 3rd year" },
+      "org": { "es": "Gazi University · Ankara, Turquía", "en": "Gazi University · Ankara, Turkey" },
+      "when": { "es": "2025-26", "en": "2025-26" },
+      "note": { "es": "Industrial Electronics: 10/10, con un convertidor buck controlado con ESP32, microcontroladores y PLCs.", "en": "Industrial Electronics: 10/10, with an ESP32-controlled buck converter, microcontrollers and PLCs." }
+    },
+    {
+      "title": { "es": "Certificado TalentUO «Programación de Aplicaciones Web y Bases de Datos»", "en": "TalentUO Certificate “Web Application Programming and Databases”" },
+      "org": { "es": "Universidad de Oviedo · 100 h", "en": "University of Oviedo · 100 h" },
+      "when": { "es": "", "en": "" },
+      "note": { "es": "", "en": "" }
+    },
+    {
+      "title": { "es": "Antiguo alumno", "en": "Alumnus" },
+      "org": { "es": "Colegio Internacional Meres · Asturias", "en": "Colegio Internacional Meres · Asturias" },
+      "when": { "es": "", "en": "" },
+      "note": { "es": "", "en": "" }
+    }
+  ]
+}

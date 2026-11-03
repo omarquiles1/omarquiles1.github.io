@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .b{fill:#F6F4EE;stroke:#1B2430}.t{fill:#1B2430}
+    @media (prefers-color-scheme:dark){.b{fill:#0E1A2B;stroke:#5CC8E8}.t{fill:#E3EAF2}}
+  </style>
+  <rect class="b" x="2" y="2" width="60" height="60" rx="6" stroke-width="4"/>
+  <text class="t" x="32" y="43" text-anchor="middle" font-family="IBM Plex Mono, Consolas, monospace" font-size="27" font-weight="600" letter-spacing="-1">OQ</text>
+</svg>

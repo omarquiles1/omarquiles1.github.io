@@ -1,0 +1,14 @@
+{
+  "groups": [
+    { "title": { "es": "Ingeniería y simulación", "en": "Engineering & simulation" }, "items": ["MATLAB", "XFOIL", "SolidWorks", "AutoCAD", "Navisworks", "Presto", "PLECS", "Simulación hidráulica (BIE / fontanería)"] },
+    { "title": { "es": "Programación y web", "en": "Programming & web" }, "items": ["Python", "C++", "HTML5", "CSS3", "SQL / SQLite", "LaTeX", "Git / GitHub"] },
+    { "title": { "es": "Hardware y embebidos", "en": "Hardware & embedded" }, "items": ["ESP32", "Arduino", "PLCs", "Electrónica de potencia (DC-DC)"] },
+    { "title": { "es": "IA", "en": "AI" }, "items": ["Agentes", "Bots", "Gemelos digitales", "Claude Code / MCP"] }
+  ],
+  "en_overrides": {
+    "Simulación hidráulica (BIE / fontanería)": "Hydraulic simulation (fire hose reels / plumbing)",
+    "Electrónica de potencia (DC-DC)": "Power electronics (DC-DC)",
+    "Agentes": "Agents",
+    "Gemelos digitales": "Digital twins"
+  }
+}

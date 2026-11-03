@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "energia": { "es": "Energía", "en": "Energy" },
+    "hardware": { "es": "Hardware", "en": "Hardware" },
+    "software": { "es": "Software/IA", "en": "Software/AI" },
+    "instalaciones": { "es": "Instalaciones", "en": "Building services" }
+  },
+  "research": {
+    "id": "vawt-struts",
+    "category": "energia",
+    "title": {
+      "es": "Pérdidas aerodinámicas de los struts en aerogeneradores de eje vertical",
+      "en": "Strut aerodynamic losses in vertical axis wind turbines"
+    },
+    "context": {
+      "es": "Beca de investigación en el grupo FERES (Fluids Engineering for Renewable Energy) del IUTA, Universidad de Oviedo. Investigación en curso.",
+      "en": "Research scholarship in the FERES group (Fluids Engineering for Renewable Energy) at IUTA, University of Oviedo. Ongoing research."
+    },
+    "summary": {
+      "es": "Los brazos que unen las palas al eje de un aerogenerador de eje vertical (los struts) generan resistencia y restan potencia. Trabajo con un modelo de doble tubo de corriente (DMST) ampliado para estimar esas pérdidas y comparar diseños de strut.",
+      "en": "The arms that join the blades of a vertical axis wind turbine to its shaft (the struts) create drag and take power away. I work with an extended double-multiple streamtube (DMST) model to estimate those losses and compare strut designs."
+    },
+    "tools": ["MATLAB", "Python", "XFOIL", "SolidWorks"]
+  },
+  "projects": [
+    {
+      "id": "mapaviles",
+      "category": "software",
+      "badge": { "es": "Ganador · Hackea Avilés 2026", "en": "Winner · Hackea Avilés 2026" },
+      "title": { "es": "MapAvilés · Mapa Vivo de Avilés", "en": "MapAvilés · Avilés Live Map" },
+      "text": {
+        "es": "Gemelo digital de Avilés con el aforo en tiempo real de espacios culturales y eventos. Tiene tres partes: una app para la ciudadanía, un panel municipal para que el Ayuntamiento anticipe puntos críticos y la web pública. Proyecto de un equipo de cuatro personas.",
+        "en": "A digital twin of Avilés showing real-time occupancy of cultural venues and events. It has three parts: an app for residents, a municipal dashboard so the City Council can anticipate hot spots, and the public website. Built by a team of four."
+      },
+      "_todo": "TODO: añadir el papel concreto de Omar en el equipo, las tecnologías usadas, capturas y el enlace a la demo de la app ciudadana.",
+      "tags": ["JavaScript", "HTML/CSS", "Three.js", "Leaflet"],
+      "links": [
+        { "label": { "es": "mapaviles.com", "en": "mapaviles.com" }, "href": "https://mapaviles.com/" },
+        { "label": { "es": "Demo del panel municipal", "en": "Municipal dashboard demo" }, "href": "https://mapaviles-dashboard.vercel.app/" }
+      ]
+    },
+    {
+      "id": "buck",
+      "category": "hardware",
+      "badge": { "es": "Gazi University · 10/10", "en": "Gazi University · 10/10" },
+      "title": { "es": "Convertidor buck controlado con ESP32", "en": "ESP32-controlled buck converter" },
+      "text": {
+        "es": "Proyecto de Industrial Electronics durante el Erasmus. Diseñamos un convertidor DC-DC reductor, lo simulamos en PLECS, montamos una placa real soldando los componentes y lo controlamos con un microcontrolador ESP32. Verificamos su funcionamiento con el osciloscopio. La asignatura incluía también prácticas con PLCs.",
+        "en": "Industrial Electronics project during my Erasmus year. We designed a step-down DC-DC converter, simulated it in PLECS, built a real board by soldering the components and controlled it with an ESP32 microcontroller. We checked how it worked on the oscilloscope. The course also included PLC lab work."
+      },
+      "_todo": "TODO: esquema, fotos del montaje, código y resultados medidos (formas de onda del osciloscopio).",
+      "tags": ["ESP32", "PLECS", "PCB", "PLC"],
+      "links": []
+    },
+    {
+      "id": "runitec",
+      "category": "instalaciones",
+      "badge": { "es": "Prácticas · Runitec Ingenieros", "en": "Internship · Runitec Ingenieros" },
+      "title": { "es": "Cálculo y delineación de instalaciones", "en": "Building-services design and calculation" },
+      "text": {
+        "es": "Planos de arquitectura e instalaciones en AutoCAD, sobre todo para obra pública, con cálculo de BIE, fontanería y saneamiento y presupuestos en Presto. Descripción genérica, sin datos de clientes ni de proyectos.",
+        "en": "Architecture and building-services drawings in AutoCAD, mainly for public works, with fire hose reel, water supply and drainage calculations and budgets in Presto. Generic description, no client or project data."
+      },
+      "tags": ["AutoCAD", "Presto", "PCI / BIE", "Fontanería"],
+      "links": []
+    },
+    {
+      "id": "daorje",
+      "category": "instalaciones",
+      "badge": { "es": "Prácticas · Grupo DAORJE", "en": "Internship · Grupo DAORJE" },
+      "title": { "es": "Ingeniería de planta en siderurgia", "en": "Plant engineering in steelmaking" },
+      "text": {
+        "es": "Isometrías de tuberías, pruebas de presión, obra nueva y prevención de riesgos en una planta de ArcelorMittal. Descripción genérica, sin información interna.",
+        "en": "Piping isometrics, pressure tests, new-build works and health and safety in an ArcelorMittal plant. Generic description, no internal information."
+      },
+      "tags": ["Isometrías", "Pruebas de presión", "PRL"],
+      "links": []
+    },
+    {
+      "id": "multiagente",
+      "category": "software",
+      "badge": { "es": "En desarrollo", "en": "In development" },
+      "title": { "es": "Sistema multiagente de gestión financiera", "en": "Multi-agent financial management system" },
+      "text": {
+        "es": "Herramienta para apoyar decisiones de inversión personal con análisis automático, con prioridad en preservar el capital y evitar el exceso de operaciones.",
+        "en": "A tool that supports personal investment decisions with automated analysis, prioritising capital preservation and avoiding overtrading."
+      },
+      "tags": ["Python", "IA"],
+      "links": []
+    }
+  ],
+  "lab": [
+    {
+      "title": { "es": "Megacerebro", "en": "Megacerebro" },
+      "text": {
+        "es": "Asistente de IA personal para trabajar con varios modelos desde un mismo sitio y usar el más adecuado para cada tarea.",
+        "en": "A personal AI assistant for working with several models in one place and using the right one for each task."
+      }
+    },
+    {
+      "title": { "es": "Comunidades energéticas en Asturias", "en": "Energy communities in Asturias" },
+      "text": {
+        "es": "Proyecto personal para impulsar comunidades energéticas locales en concejos asturianos, como Mieres.",
+        "en": "A personal project to promote local energy communities in Asturian municipalities such as Mieres."
+      }
+    },
+    {
+      "title": { "es": "Gemelos digitales para la industria", "en": "Digital twins for industry" },
+      "text": {
+        "es": "Prototipos en fase temprana para anticipar fallos en la industria pesada: el estado de las redes de tuberías, la fatiga de los componentes y la integridad de las estructuras.",
+        "en": "Early-stage prototypes to anticipate failures in heavy industry: the condition of piping networks, component fatigue and structural integrity."
+      }
+    },
+    {
+      "title": { "es": "Cálculo de instalaciones y presupuestos", "en": "Building-services calculation and budgets" },
+      "text": {
+        "es": "Herramienta para agilizar los proyectos de protección contra incendios y fontanería, desde el cálculo hasta el presupuesto.",
+        "en": "A tool to speed up fire-protection and water-supply projects, from calculation to budget."
+      }
+    },
+    {
+      "title": { "es": "Agentes y bots", "en": "Agents and bots" },
+      "text": {
+        "es": "Asistentes de uso personal para organizarme con la universidad, el correo y mis proyectos.",
+        "en": "Personal assistants that help me stay on top of university, email and my projects."
+      }
+    }
+  ]
+}
