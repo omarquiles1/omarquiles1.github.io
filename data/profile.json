@@ -50,7 +50,7 @@
     { "icon": "wind", "title": { "es": "Fluidos y energía", "en": "Fluids & energy" },
       "text": { "es": "Aerodinámica de aerogeneradores de eje vertical con MATLAB y XFOIL, e instalaciones de fontanería y protección contra incendios.", "en": "Vertical axis wind turbine aerodynamics with MATLAB and XFOIL, plus plumbing and fire-protection installations." } },
     { "icon": "cpu", "title": { "es": "Hardware y electrónica", "en": "Hardware & electronics" },
-      "text": { "es": "Electrónica de potencia y control con ESP32, Arduino y PLCs, desde la simulación hasta la placa soldada.", "en": "Power electronics and control with ESP32, Arduino and PLCs, from simulation to the soldered board." } },
+      "text": { "es": "Electrónica de potencia y control con STM32, ESP32, Arduino y PLCs, desde la simulación hasta el montaje.", "en": "Power electronics and control with STM32, ESP32, Arduino and PLCs, from simulation to assembly." } },
     { "icon": "spark", "title": { "es": "Software e IA aplicada", "en": "Software & applied AI" },
       "text": { "es": "Python, datos y agentes de IA para analizar sistemas físicos y automatizar el trabajo de ingeniería.", "en": "Python, data and AI agents to analyse physical systems and automate engineering work." } }
   ],

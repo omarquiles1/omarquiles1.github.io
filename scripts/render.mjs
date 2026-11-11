@@ -28,7 +28,7 @@ const UI = {
     sec: { about: 'Sobre mí', research: 'Investigación', projects: 'Proyectos', lab: 'Lo que estoy construyendo', exp: 'Experiencia', edu: 'Formación', career: 'Trayectoria', press: 'Prensa y reconocimientos', stack: 'Herramientas', contact: 'Contacto' },
     lead: {
       research: 'Mi trabajo actual como becario en el grupo FERES del IUTA.',
-      projects: 'Proyectos de energía, hardware, software e instalaciones.',
+      projects: 'Proyectos de software, IA y electrónica.',
       lab: 'Mi laboratorio personal: ideas que estoy construyendo ahora mismo.',
       career: 'Dónde he trabajado y dónde me he formado.',
       press: 'Lo que ha salido de los proyectos en equipo.',
@@ -48,7 +48,7 @@ const UI = {
     sec: { about: 'About me', research: 'Research', projects: 'Projects', lab: 'What I am building', exp: 'Experience', edu: 'Education', career: 'Career', press: 'Press & awards', stack: 'Tools', contact: 'Contact' },
     lead: {
       research: 'My current work as a research scholar in the FERES group at IUTA.',
-      projects: 'Energy, hardware, software and building-services projects.',
+      projects: 'Software, AI and electronics projects.',
       lab: 'My personal lab: ideas I am building right now.',
       career: 'Where I have worked and studied.',
       press: 'What came out of the team projects.',
@@ -120,7 +120,7 @@ function streamlines() {
 const ART = {
   buck: `<g class="ln"><path d="M30 60h50l14-12M110 60h20"/><circle cx="96" cy="60" r="2.5" class="dot"/><path d="M130 60c6-14 14-14 18 0s12 14 18 0 12-14 18 0 12 14 18 0"/><path d="M202 60h60v28M262 104v26M248 88h28M248 104h28"/><path d="M118 60v70M108 92l10-14 10 14ZM106 78h24"/><path d="M30 130h232M30 60v70"/></g>
     <g class="ac"><path d="M196 152h10v-12h12v12h10v-12h12v12h10v-12h12v12h10"/><path d="M40 150c10-18 20-18 30 0s20 18 30 0"/></g>
-    <text x="30" y="44">V<tspan dy="3" font-size="9">in</tspan></text><text x="270" y="78">V<tspan dy="3" font-size="9">out</tspan></text><text x="146" y="44">L</text><text x="196" y="174">PWM · ESP32</text>`,
+    <text x="30" y="44">V<tspan dy="3" font-size="9">in</tspan></text><text x="270" y="78">V<tspan dy="3" font-size="9">out</tspan></text><text x="146" y="44">L</text><text x="196" y="174">PWM · STM32</text>`,
   plan: `<g class="ln"><rect x="34" y="28" width="252" height="128" rx="2"/><path d="M34 92h96M130 28v58M130 104v52M210 28v128M210 92h76"/><path d="M146 92h48" stroke-dasharray="2 4"/></g>
     <g class="ac"><path d="M52 128h140v-70h70"/><circle cx="52" cy="128" r="6"/><circle cx="160" cy="58" r="5"/><circle cx="262" cy="58" r="5"/><rect x="248" y="118" width="22" height="22" rx="3"/><path d="M253 129h12M259 123v12"/></g>`,
   pipe: `<g class="ln"><path d="M40 120l70-40 70 40 70-40"/><path d="M40 136l70-40 70 40 70-40"/><path d="M110 80V40M110 96v0M126 88V48"/><path d="M180 120v36M196 128v28"/></g>
@@ -259,7 +259,7 @@ function home(L) {
   const card = (p) => `
       <li class="card" data-cat="${p.category}">
         ${p._todo ? `<!-- ${esc(p._todo)} -->` : ''}
-        <div class="card-media media-${p.art || 'photo'}">${thumb(p)}</div>
+        <div class="card-media media-${p.art || 'photo'}">${thumb(p)}${p.credit ? a(p.credit.href, esc(L === 'es' ? p.credit.text : p.credit.textEn), 'credit') : ''}</div>
         <div class="card-body">
           <p class="chips"><span class="chip">${esc(proj.categories[p.category][L])}</span>${p.badge ? `<span class="chip chip-soft">${esc(p.badge[L])}</span>` : ''}</p>
           <h3>${esc(p.title[L])}</h3>

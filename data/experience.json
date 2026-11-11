@@ -69,7 +69,7 @@
       "title": { "es": "Erasmus+ · curso completo de 3.º", "en": "Erasmus+ · full 3rd year" },
       "org": { "es": "Gazi University · Ankara, Turquía", "en": "Gazi University · Ankara, Turkey" },
       "when": { "es": "2025-26", "en": "2025-26" },
-      "note": { "es": "Industrial Electronics: 10/10, con un convertidor buck controlado con ESP32, microcontroladores y PLCs.", "en": "Industrial Electronics: 10/10, with an ESP32-controlled buck converter, microcontrollers and PLCs." }
+      "note": { "es": "Industrial Electronics: 10/10. Prácticas de electrónica de potencia con microcontroladores y PLCs.", "en": "Industrial Electronics: 10/10. Power electronics lab work with microcontrollers and PLCs." }
     },
     {
       "title": { "es": "Certificado TalentUO «Programación de Aplicaciones Web y Bases de Datos»", "en": "TalentUO Certificate “Web Application Programming and Databases”" },

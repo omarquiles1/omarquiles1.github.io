@@ -67,7 +67,7 @@ const np = await nojs.newPage();
 await np.goto(BASE + '/', { waitUntil: 'load' });
 const cards = await np.locator('.cards .card:visible').count();
 const txt = await np.locator('main').innerText();
-if (cards < 5 || !txt.includes('Hackea Avilés')) fail('sin JS falta contenido');
+if (cards < 3 || !txt.includes('Hackea Avilés')) fail('sin JS falta contenido');
 await np.screenshot({ path: `${OUT}/nojs-desktop.png`, fullPage: true });
 await nojs.close();
 

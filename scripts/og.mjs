@@ -20,10 +20,11 @@ if (existsSync(mat('avatar.jpg'))) {
   console.log('✓ foto');
 } else console.warn('! falta materiales/avatar.jpg');
 
-// Miniaturas 720×405 de capturas de webs públicas (materiales/<nombre>.png)
-for (const name of ['mapaviles-panel']) {
-  if (!existsSync(mat(`${name}.png`))) { console.warn(`! falta materiales/${name}.png`); continue; }
-  const base = sharp(mat(`${name}.png`)).resize(720, 405, { fit: 'cover', position: 'top' });
+// Miniaturas 720×405 (materiales/<nombre>.png|jpg): capturas de webs públicas y fotos con licencia libre
+for (const [name, position] of [['mapaviles-web', 'top'], ['multiagente', 'centre']]) {
+  const src = ['png', 'jpg'].map((e) => mat(`${name}.${e}`)).find(existsSync);
+  if (!src) { console.warn(`! falta materiales/${name}.png|jpg`); continue; }
+  const base = sharp(src).resize(720, 405, { fit: 'cover', position });
   await base.clone().avif({ quality: 50 }).toFile(join(ROOT, `assets/img/${name}.avif`));
   await base.clone().webp({ quality: 74 }).toFile(join(ROOT, `assets/img/${name}.webp`));
   await base.clone().jpeg({ quality: 78, mozjpeg: true }).toFile(join(ROOT, `assets/img/${name}.jpg`));
