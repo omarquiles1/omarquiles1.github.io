@@ -12,6 +12,7 @@
   "devDependencies": {
     "@fontsource/ibm-plex-mono": "5.1.1",
     "@fontsource/ibm-plex-sans": "5.1.1",
+    "@fontsource/sora": "^5.1.1",
     "playwright": "1.49.1",
     "sharp": "0.33.5"
   }

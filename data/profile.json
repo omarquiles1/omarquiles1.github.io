@@ -23,14 +23,37 @@
     "es": [
       "Soy estudiante de 4.º curso del Grado Bilingüe en Ingeniería en Tecnologías Industriales en la Universidad de Oviedo (Escuela Politécnica de Ingeniería de Gijón). Me interesa el punto donde se unen la ingeniería mecánica e industrial clásica (fluidos, instalaciones, industria pesada) y el software.",
       "Trabajo con programación, datos, simulación e IA para analizar y mejorar sistemas físicos. Ahora mismo lo hago como becario de investigación en el grupo FERES del IUTA, sobre la aerodinámica de los aerogeneradores de eje vertical.",
-      "He pasado por una planta siderúrgica, por una oficina técnica de instalaciones y por un laboratorio de electrónica en Turquía, y en octubre de 2026 gané Hackea Avilés con mi equipo. Me gusta que lo que calculo acabe funcionando en el mundo real."
+      "He pasado por una planta siderúrgica, por una oficina técnica de instalaciones y por un laboratorio de electrónica en Turquía, y en octubre de 2026 gané Hackea Avilés con mi equipo."
     ],
     "en": [
       "I am a 4th-year student of the Bilingual Degree in Industrial Technologies Engineering at the University of Oviedo (Gijón Polytechnic School of Engineering). I am interested in the place where classic mechanical and industrial engineering (fluids, building services, heavy industry) meets software.",
       "I use programming, data, simulation and AI to analyse and improve physical systems. Right now I do this as a research scholar in the FERES group at IUTA, working on the aerodynamics of vertical axis wind turbines.",
-      "I have worked in a steel plant, in a building-services engineering office and in an electronics lab in Turkey, and in October 2026 my team won Hackea Avilés. I like it when what I calculate ends up working in the real world."
+      "I have worked in a steel plant, in a building-services engineering office and in an electronics lab in Turkey, and in October 2026 my team won Hackea Avilés."
     ]
   },
+  "greeting": { "es": "Hola, soy", "en": "Hi, I am" },
+  "badge": { "es": "Ganador · Hackea Avilés 2026", "en": "Winner · Hackea Avilés 2026" },
+  "place": { "es": "Gijón · Asturias", "en": "Gijón · Asturias, Spain" },
+  "placeNote": { "es": "Becario de investigación en IUTA", "en": "Research scholar at IUTA" },
+  "quoteLabel": { "es": "Cómo trabajo", "en": "How I work" },
+  "quote": {
+    "es": "Me gusta que lo que calculo acabe funcionando en el mundo real.",
+    "en": "I like it when what I calculate ends up working in the real world."
+  },
+  "stats": [
+    { "value": "4.º", "label": { "es": "curso de Ingeniería en Tecnologías Industriales", "en": "year of Industrial Technologies Engineering" } },
+    { "value": "10/10", "label": { "es": "en Industrial Electronics (Gazi University)", "en": "in Industrial Electronics (Gazi University)" } },
+    { "value": "1.º", "label": { "es": "puesto en Hackea Avilés 2026", "en": "place at Hackea Avilés 2026" } },
+    { "value": "301 h", "label": { "es": "de prácticas en una oficina técnica", "en": "of internship in an engineering office" } }
+  ],
+  "focus": [
+    { "icon": "wind", "title": { "es": "Fluidos y energía", "en": "Fluids & energy" },
+      "text": { "es": "Aerodinámica de aerogeneradores de eje vertical con MATLAB y XFOIL, e instalaciones de fontanería y protección contra incendios.", "en": "Vertical axis wind turbine aerodynamics with MATLAB and XFOIL, plus plumbing and fire-protection installations." } },
+    { "icon": "cpu", "title": { "es": "Hardware y electrónica", "en": "Hardware & electronics" },
+      "text": { "es": "Electrónica de potencia y control con ESP32, Arduino y PLCs, desde la simulación hasta la placa soldada.", "en": "Power electronics and control with ESP32, Arduino and PLCs, from simulation to the soldered board." } },
+    { "icon": "spark", "title": { "es": "Software e IA aplicada", "en": "Software & applied AI" },
+      "text": { "es": "Python, datos y agentes de IA para analizar sistemas físicos y automatizar el trabajo de ingeniería.", "en": "Python, data and AI agents to analyse physical systems and automate engineering work." } }
+  ],
   "cv": {
     "available": false,
     "es": "/assets/cv/CV_Omar_Quiles_ES.pdf",

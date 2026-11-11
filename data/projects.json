@@ -25,6 +25,7 @@
   "projects": [
     {
       "id": "mapaviles",
+      "thumb": "/assets/img/mapaviles-panel", "thumbAlt": { "es": "Panel municipal de MapAvilés con el gemelo digital del casco urbano", "en": "MapAvilés municipal dashboard with the digital twin of the town centre" },
       "category": "software",
       "badge": { "es": "Ganador · Hackea Avilés 2026", "en": "Winner · Hackea Avilés 2026" },
       "title": { "es": "MapAvilés · Mapa Vivo de Avilés", "en": "MapAvilés · Avilés Live Map" },
@@ -41,6 +42,7 @@
     },
     {
       "id": "buck",
+      "art": "buck",
       "category": "hardware",
       "badge": { "es": "Gazi University · 10/10", "en": "Gazi University · 10/10" },
       "title": { "es": "Convertidor buck controlado con ESP32", "en": "ESP32-controlled buck converter" },
@@ -54,6 +56,7 @@
     },
     {
       "id": "runitec",
+      "art": "plan",
       "category": "instalaciones",
       "badge": { "es": "Prácticas · Runitec Ingenieros", "en": "Internship · Runitec Ingenieros" },
       "title": { "es": "Cálculo y delineación de instalaciones", "en": "Building-services design and calculation" },
@@ -66,6 +69,7 @@
     },
     {
       "id": "daorje",
+      "art": "pipe",
       "category": "instalaciones",
       "badge": { "es": "Prácticas · Grupo DAORJE", "en": "Internship · Grupo DAORJE" },
       "title": { "es": "Ingeniería de planta en siderurgia", "en": "Plant engineering in steelmaking" },
@@ -78,6 +82,7 @@
     },
     {
       "id": "multiagente",
+      "art": "agents",
       "category": "software",
       "badge": { "es": "En desarrollo", "en": "In development" },
       "title": { "es": "Sistema multiagente de gestión financiera", "en": "Multi-agent financial management system" },
