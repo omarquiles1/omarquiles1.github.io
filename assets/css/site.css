@@ -38,7 +38,8 @@
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 80px; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.65 var(--sans); }
 img, svg { display: block; max-width: 100%; }
-h1, h2, h3, h4 { margin: 0 0 .5em; line-height: 1.15; text-wrap: balance; }
+h1, h2, h3, h4 { margin: 0 0 .5em; line-height: 1.15; }
+h1, h2 { text-wrap: balance; }
 h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: -.02em; }
 h3 { font-size: 1.2rem; }
 h4 { font-size: 1.05rem; font-weight: 600; }
@@ -77,7 +78,8 @@ a { color: var(--accent); text-underline-offset: .18em; }
 .lang a:hover { color: #fff; }
 .icon-btn { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border-radius: 999px; border: 1px solid var(--night-line); background: var(--night-2); color: var(--night-ink); cursor: pointer; }
 .icon-btn svg { width: 18px; height: 18px; }
-.js .theme-btn[hidden] { display: grid; }
+.theme-btn { display: none; }
+.js .theme-btn { display: grid; }
 
 /* ── Hero ─────────────────────────────────────────────────────── */
 .hero { position: relative; overflow: hidden; background: radial-gradient(1200px 600px at 75% 40%, #12223D 0%, var(--night) 60%); color: var(--night-ink); }
@@ -106,9 +108,9 @@ a { color: var(--accent); text-underline-offset: .18em; }
 .portrait { position: relative; margin: 0; justify-self: center; width: min(240px, 70vw); }
 @media (min-width: 960px) { .portrait { width: 320px; justify-self: end; margin-right: 24px; } }
 .flow { position: absolute; z-index: 0; left: 50%; top: calc(50% - 30px); width: 400%; max-width: none; height: auto; transform: translate(-50%, -50%); pointer-events: none; }
-.flow .sl { fill: none; stroke: var(--flow); stroke-opacity: .16; stroke-width: 1.4; }
-.flow .sp { fill: none; stroke: var(--flow); stroke-opacity: .85; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 3 70; }
-@media (prefers-reduced-motion: no-preference) { .flow .sp { animation: flow 6s linear infinite; } }
+.flow .sl { fill: none; stroke-opacity: .16; stroke-width: 1.4; }
+.flow .sp { fill: none; stroke-opacity: .85; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 3 70; }
+@media (prefers-reduced-motion: no-preference) { .flow.on .sp { animation: flow 6s linear infinite; } }
 @keyframes flow { to { stroke-dashoffset: -146; } }
 .portrait-ring { position: relative; z-index: 1; border-radius: 50%; padding: 8px; background: conic-gradient(from 200deg, var(--night-accent), #FDBA74, var(--flow), var(--night-accent)); box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .6); }
 .portrait-ring img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 6px solid var(--night); background: #fff; }
@@ -198,8 +200,8 @@ a { color: var(--accent); text-underline-offset: .18em; }
 .tags li { font: 500 .78rem/1.5 var(--mono); padding: 3px 10px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--line); }
 
 /* Proyectos */
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
-.js .filters[hidden] { display: flex; }
+.filters { display: none; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.js .filters { display: flex; }
 .filters button { font: 600 .9rem var(--sans); min-height: 42px; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
 .filters button:hover { border-color: var(--ink); }
 .filters button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }

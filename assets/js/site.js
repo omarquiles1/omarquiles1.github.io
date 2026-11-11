@@ -6,7 +6,6 @@
   // Tema claro/oscuro
   const btn = document.querySelector('.theme-btn');
   if (btn) {
-    btn.hidden = false;
     const current = () => root.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     const sync = () => btn.setAttribute('aria-pressed', String(current() === 'dark'));
     sync();
@@ -21,7 +20,6 @@
   // Filtro de proyectos
   const bar = document.querySelector('.filters');
   if (bar) {
-    bar.hidden = false;
     const cards = [...document.querySelectorAll('.cards .card')];
     bar.addEventListener('click', (e) => {
       const b = e.target.closest('button[data-filter]');
@@ -32,4 +30,14 @@
     });
   }
 
+  // Líneas de corriente: se animan después de cargar y solo mientras el hero está a la vista.
+  const flow = document.querySelector('.flow');
+  if (flow && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const start = () => {
+      if (!('IntersectionObserver' in window)) { flow.classList.add('on'); return; }
+      new IntersectionObserver(([e]) => flow.classList.toggle('on', e.isIntersecting)).observe(flow.closest('.hero') || flow);
+    };
+    const later = () => setTimeout(start, 2500);
+    document.readyState === 'complete' ? later() : addEventListener('load', later, { once: true });
+  }
 })();

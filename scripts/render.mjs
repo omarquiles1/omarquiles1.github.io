@@ -109,11 +109,10 @@ function streamlines() {
     }
     paths.push('M' + pts.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join('L'));
   }
-  const body = paths.map((d, i) => `<path class="sl" d="${d}"/><path class="sp" style="animation-delay:-${(i * 0.83) % 6}s" d="${d}"/>`).join('');
+  const body = paths.map((d, i) => `<path class="sl" d="${d}"/>${i % 2 ? '' : `<path class="sp" style="animation-delay:-${((i * 0.83) % 6).toFixed(2)}s" d="${d}"/>`}`).join('');
   return `<svg class="flow" viewBox="0 0 ${W} ${H}" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
-      <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff" stop-opacity=".9"/><stop offset=".8" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".2"/></linearGradient>
-      <mask id="fm"><rect width="${W}" height="${H}" fill="url(#fade)"/></mask></defs>
-      <g mask="url(#fm)">${body}</g>
+      <defs><linearGradient id="fg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="${W}" y2="0"><stop offset="0" stop-color="#38BDF8" stop-opacity="0"/><stop offset=".35" stop-color="#38BDF8" stop-opacity=".9"/><stop offset=".8" stop-color="#38BDF8"/><stop offset="1" stop-color="#38BDF8" stop-opacity=".2"/></linearGradient></defs>
+      <g stroke="url(#fg)">${body}</g>
     </svg>`;
 }
 
@@ -232,7 +231,7 @@ function topbar(L, base, alt) {
           ? `<li><span aria-current="true" lang="${code}">${code.toUpperCase()}<span class="sr"> · ${name}</span></span></li>`
           : `<li><a href="${href}" hreflang="${code}" lang="${code}">${code.toUpperCase()}<span class="sr"> · ${name}</span></a></li>`).join('')}
       </ul>
-      <button class="icon-btn theme-btn" type="button" aria-label="${u.theme}" hidden>${ICON.theme}</button>
+      <button class="icon-btn theme-btn" type="button" aria-label="${u.theme}">${ICON.theme}</button>
     </div>
   </div>
 </header>`;
@@ -382,7 +381,7 @@ ${topbar(L, base, alt)}
   <section id="${id.projects}" class="sec sec-alt" aria-labelledby="${id.projects}-t">
     <div class="wrap">
       ${secHead(3, u.sec.projects, id.projects, u.lead.projects)}
-      <div class="filters" role="group" aria-label="${u.filter}" hidden>
+      <div class="filters" role="group" aria-label="${u.filter}">
         <button type="button" aria-pressed="true" data-filter="all">${u.all}</button>
         ${cats.map(([k, v]) => `<button type="button" aria-pressed="false" data-filter="${k}">${esc(v[L])}</button>`).join('')}
       </div>
