@@ -287,7 +287,7 @@ function home(L) {
             ${p.tags?.length ? `<ul class="tags" role="list">${p.tags.map((t) => `<li>${tag(t)}</li>`).join('')}</ul>` : ''}
             ${p.links?.length || p.reportAvailable || !p.noRepo ? `<div class="card-foot">
               ${p.links?.length ? `<ul class="links" role="list">${p.links.map((l) => `<li>${a(l.href, `${esc(l.label[L])}${ICON.ext}`)}</li>`).join('')}</ul>` : ''}
-              ${p.reportAvailable && p.report?.href ? `<p class="report">${a(p.report.href, `${ICON.download}${u.report}`, 'btn-report')}</p>` : ''}
+              ${p.reportAvailable && p.report?.href ? `<p class="report">${a(p.report.href, `${u.report}${ICON.ext}`, 'btn-report', ' target="_blank" rel="noopener"')}</p>` : ''}
               ${p.noRepo ? '' : `<p class="meta">${p.category === 'instalaciones' ? `${ICON.brief}${u.generic}` : `${ICON.lock}${u.privateCode}`}</p>`}
             </div>` : ''}
           </div>

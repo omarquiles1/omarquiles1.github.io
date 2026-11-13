@@ -213,19 +213,25 @@
         </div>
       </li>
       <li class="card" id="project-buck" data-cat="hardware">
-        <!-- TODO: reportAvailable en true solo cuando los compañeros acepten publicar el informe y exista assets/docs/informe-buck.pdf. -->
-        <div class="card-media media-buck"><svg viewBox="0 0 320 184" class="art" aria-hidden="true"><g class="ln"><path d="M30 60h50l14-12M110 60h20"/><circle cx="96" cy="60" r="2.5" class="dot"/><path d="M130 60c6-14 14-14 18 0s12 14 18 0 12-14 18 0 12 14 18 0"/><path d="M202 60h60v28M262 104v26M248 88h28M248 104h28"/><path d="M118 60v70M108 92l10-14 10 14ZM106 78h24"/><path d="M30 130h232M30 60v70"/></g>
-    <g class="ac"><path d="M196 152h10v-12h12v12h10v-12h12v12h10v-12h12v12h10"/><path d="M40 150c10-18 20-18 30 0s20 18 30 0"/></g>
-    <text x="30" y="44">V<tspan dy="3" font-size="9">in</tspan></text><text x="270" y="78">V<tspan dy="3" font-size="9">out</tspan></text><text x="146" y="44">L</text><text x="196" y="174">PWM · STM32</text></svg></div>
+        
+        <div class="card-media media-photo"><picture>
+          <source type="image/avif" srcset="/assets/img/projects/buck-portada.avif">
+          <source type="image/webp" srcset="/assets/img/projects/buck-portada.webp">
+          <img src="/assets/img/projects/buck-portada.jpg" width="720" height="405" loading="lazy" decoding="async" alt="Left, the assembled buck converter prototype in the lab; right, its schematic in PLECS">
+        </picture></div>
         <div class="card-body">
           <p class="chips"><span class="chip">Hardware</span><span class="chip chip-soft">Gazi University · Lab</span></p>
           <h3>Synchronous buck converter with STM32</h3>
           <p class="card-text">Power electronics lab work, as a team. We sized a 15 V to 5 V synchronous step-down converter (10 W, 100 kHz), simulated it in PLECS with PI control, built it with digital control from an STM32 microcontroller and checked the waveforms on the oscilloscope.</p>
           <p class="card-text">Team project (6 people): I worked on every stage, from sizing and simulation to assembly and measurements.</p>
-          <ul class="gallery" role="list"><li><figure><a href="/assets/img/projects/buck-placa-full.jpg" class="zoom" data-caption="Assembled buck converter board in the lab"><picture><source type="image/avif" srcset="/assets/img/projects/buck-placa.avif"><source type="image/webp" srcset="/assets/img/projects/buck-placa.webp"><img src="/assets/img/projects/buck-placa.jpg" width="320" height="240" loading="lazy" decoding="async" alt="Assembled buck converter board in the lab"></picture></a><figcaption>Board</figcaption></figure></li><li><figure><a href="/assets/img/projects/buck-osciloscopio-full.jpg" class="zoom" data-caption="Buck converter waveforms on the oscilloscope"><picture><source type="image/avif" srcset="/assets/img/projects/buck-osciloscopio.avif"><source type="image/webp" srcset="/assets/img/projects/buck-osciloscopio.webp"><img src="/assets/img/projects/buck-osciloscopio.jpg" width="320" height="240" loading="lazy" decoding="async" alt="Buck converter waveforms on the oscilloscope"></picture></a><figcaption>Oscilloscope</figcaption></figure></li><li><figure><a href="/assets/img/projects/buck-plecs-full.jpg" class="zoom" data-caption="Buck converter simulation in PLECS"><picture><source type="image/avif" srcset="/assets/img/projects/buck-plecs.avif"><source type="image/webp" srcset="/assets/img/projects/buck-plecs.webp"><img src="/assets/img/projects/buck-plecs.jpg" width="320" height="240" loading="lazy" decoding="async" alt="Buck converter simulation in PLECS"></picture></a><figcaption>PLECS</figcaption></figure></li></ul>
+          
           <div class="card-bottom">
             <ul class="tags" role="list"><li>STM32</li><li>PLECS</li><li>PI control</li><li>Oscilloscope</li></ul>
-            
+            <div class="card-foot">
+              
+              <p class="report"><a href="/assets/docs/informe-buck.pdf" class="btn-report" target="_blank" rel="noopener">View report (PDF)<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></p>
+              
+            </div>
           </div>
         </div>
       </li>

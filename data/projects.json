@@ -78,7 +78,6 @@
     },
     {
       "id": "buck",
-      "art": "buck",
       "category": "hardware",
       "badge": {
         "es": "Gazi University · Laboratorio",
@@ -105,41 +104,6 @@
         }
       ],
       "links": [],
-      "gallery": [
-        {
-          "file": "placa",
-          "alt": {
-            "es": "Placa del convertidor buck montada en el laboratorio",
-            "en": "Assembled buck converter board in the lab"
-          },
-          "caption": {
-            "es": "Placa",
-            "en": "Board"
-          }
-        },
-        {
-          "file": "osciloscopio",
-          "alt": {
-            "es": "Formas de onda del convertidor buck en el osciloscopio",
-            "en": "Buck converter waveforms on the oscilloscope"
-          },
-          "caption": {
-            "es": "Osciloscopio",
-            "en": "Oscilloscope"
-          }
-        },
-        {
-          "file": "plecs",
-          "alt": {
-            "es": "Simulación del convertidor buck en PLECS",
-            "en": "Buck converter simulation in PLECS"
-          },
-          "caption": {
-            "es": "PLECS",
-            "en": "PLECS"
-          }
-        }
-      ],
       "team": {
         "text": {
           "es": "Proyecto en equipo de 6 personas: participé en todas las fases, del dimensionado y la simulación al montaje y las medidas.",
@@ -149,9 +113,13 @@
       "report": {
         "href": "/assets/docs/informe-buck.pdf"
       },
-      "reportAvailable": false,
-      "_todoReport": "TODO: reportAvailable en true solo cuando los compañeros acepten publicar el informe y exista assets/docs/informe-buck.pdf.",
-      "noRepo": true
+      "reportAvailable": true,
+      "noRepo": true,
+      "thumb": "/assets/img/projects/buck-portada",
+      "thumbAlt": {
+        "es": "A la izquierda, el prototipo del convertidor buck montado en el laboratorio; a la derecha, su esquema en PLECS",
+        "en": "Left, the assembled buck converter prototype in the lab; right, its schematic in PLECS"
+      }
     },
     {
       "id": "multiagente",
