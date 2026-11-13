@@ -1,5 +1,5 @@
 // Convierte imágenes de proyecto a AVIF, WebP y JPG con dimensiones fijas en assets/img/projects/.
-//   node scripts/img.mjs buck                          → materiales/buck/{placa,osciloscopio,plecs}.* a 960×640
+//   node scripts/img.mjs buck                          → materiales/buck/{placa,osciloscopio,plecs}.* a 640×480 (+ -full.jpg)
 //   node scripts/img.mjs <entrada> <nombre> [ancho alto] → assets/img/projects/<nombre>.{avif,webp,jpg} (1440×810)
 // Recorta al centro para llenar el tamaño (fit: cover) y quita los metadatos (EXIF, GPS).
 import sharp from 'sharp';
@@ -30,7 +30,12 @@ if (arg === 'buck') {
   for (const shot of ['placa', 'osciloscopio', 'plecs']) {
     const file = files.find((f) => parse(f).name.toLowerCase() === shot);
     if (!file) { console.warn(`Falta materiales/buck/${shot}.*`); continue; }
-    await convert(join(dir, file), `buck-${shot}`, 960, 640);
+    // Miniatura 4:3 y, para verla en grande, la imagen completa (<shot>-full.* si existe; si no, la misma)
+    await convert(join(dir, file), `buck-${shot}`, 640, 480);
+    const full = files.find((f) => parse(f).name.toLowerCase() === `${shot}-full`) || file;
+    await sharp(join(dir, full)).rotate().resize(1600, 1600, { fit: 'inside', withoutEnlargement: true })
+      .jpeg({ quality: 84, mozjpeg: true }).toFile(join(OUT, `buck-${shot}-full.jpg`));
+    console.log(`✓ buck-${shot}-full`);
   }
 } else {
   await convert(arg, name, Number(w) || 1440, Number(h) || 810);

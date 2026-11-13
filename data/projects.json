@@ -95,8 +95,14 @@
       "tags": [
         "STM32",
         "PLECS",
-        "Control PI",
-        "Osciloscopio"
+        {
+          "es": "Control PI",
+          "en": "PI control"
+        },
+        {
+          "es": "Osciloscopio",
+          "en": "Oscilloscope"
+        }
       ],
       "links": [],
       "gallery": [
@@ -105,6 +111,10 @@
           "alt": {
             "es": "Placa del convertidor buck montada en el laboratorio",
             "en": "Assembled buck converter board in the lab"
+          },
+          "caption": {
+            "es": "Placa",
+            "en": "Board"
           }
         },
         {
@@ -112,6 +122,10 @@
           "alt": {
             "es": "Formas de onda del convertidor buck en el osciloscopio",
             "en": "Buck converter waveforms on the oscilloscope"
+          },
+          "caption": {
+            "es": "Osciloscopio",
+            "en": "Oscilloscope"
           }
         },
         {
@@ -119,21 +133,25 @@
           "alt": {
             "es": "Simulación del convertidor buck en PLECS",
             "en": "Buck converter simulation in PLECS"
+          },
+          "caption": {
+            "es": "PLECS",
+            "en": "PLECS"
           }
         }
       ],
       "team": {
-        "size": 6,
-        "part": {
-          "es": "participé en todas las fases, del cálculo y la simulación al montaje y las medidas, como el resto del equipo",
-          "en": "I took part in every stage, from sizing and simulation to assembly and measurements, like the rest of the team"
+        "text": {
+          "es": "Proyecto en equipo de 6 personas: participé en todas las fases, del dimensionado y la simulación al montaje y las medidas.",
+          "en": "Team project (6 people): I worked on every stage, from sizing and simulation to assembly and measurements."
         }
       },
       "report": {
         "href": "/assets/docs/informe-buck.pdf"
       },
       "reportAvailable": false,
-      "_todoReport": "TODO: reportAvailable en true solo cuando los compañeros acepten publicar el informe y exista assets/docs/informe-buck.pdf."
+      "_todoReport": "TODO: reportAvailable en true solo cuando los compañeros acepten publicar el informe y exista assets/docs/informe-buck.pdf.",
+      "noRepo": true
     },
     {
       "id": "multiagente",
@@ -152,7 +170,10 @@
       },
       "tags": [
         "Python",
-        "IA"
+        {
+          "es": "IA",
+          "en": "AI"
+        }
       ],
       "links": [],
       "thumb": "/assets/img/projects/multiagente-web",

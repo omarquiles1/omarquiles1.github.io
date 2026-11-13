@@ -60,39 +60,36 @@
   },
   "stats": [
     {
-      "icon": "cap",
       "target": "edu",
       "value": {
-        "es": "4.º curso",
-        "en": "4th year"
+        "es": "4.º",
+        "en": "4th"
       },
       "label": {
-        "es": "Ingeniería en Tecnologías Industriales",
-        "en": "Industrial Technologies Engineering"
+        "es": "curso · Ingeniería en Tecnologías Industriales",
+        "en": "year · Industrial Technologies Engineering"
       }
     },
     {
-      "icon": "trophy",
       "target": "mapaviles",
       "value": {
-        "es": "1.º puesto",
-        "en": "1st place"
+        "es": "1.º",
+        "en": "1st"
       },
       "label": {
-        "es": "Hackea Avilés 2026",
-        "en": "Hackea Avilés 2026"
+        "es": "puesto · Hackea Avilés 2026",
+        "en": "place · Hackea Avilés 2026"
       }
     },
     {
-      "icon": "plant",
       "target": "exp",
       "value": {
         "es": "Oficina + Planta",
         "en": "Office + Plant"
       },
       "label": {
-        "es": "Experiencia en oficina técnica de instalaciones y en planta siderúrgica (ArcelorMittal)",
-        "en": "Experience in a building-services engineering office and at a steel plant (ArcelorMittal)"
+        "es": "oficina técnica de instalaciones y planta siderúrgica (ArcelorMittal)",
+        "en": "building-services engineering office and steel plant (ArcelorMittal)"
       }
     }
   ],

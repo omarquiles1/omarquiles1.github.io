@@ -30,6 +30,26 @@
     });
   }
 
+  // Visor de imágenes de la galería: <dialog> nativo; sin JS, el enlace abre la imagen.
+  const zooms = document.querySelectorAll('a.zoom');
+  if (zooms.length && 'HTMLDialogElement' in window) {
+    const es = root.lang.startsWith('es');
+    const dlg = document.createElement('dialog');
+    dlg.className = 'lightbox';
+    dlg.innerHTML = `<div class="lightbox-bar"><span></span><button type="button">${es ? 'Cerrar' : 'Close'}</button></div><img alt="">`;
+    document.body.append(dlg);
+    const [cap, img] = [dlg.querySelector('span'), dlg.querySelector('img')];
+    dlg.querySelector('button').addEventListener('click', () => dlg.close());
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+    zooms.forEach((z) => z.addEventListener('click', (e) => {
+      e.preventDefault();
+      img.src = z.getAttribute('href');
+      img.alt = z.dataset.caption || '';
+      cap.textContent = z.dataset.caption || '';
+      dlg.showModal();
+    }));
+  }
+
   // Líneas de corriente: se animan después de cargar y solo mientras el hero está a la vista.
   const flow = document.querySelector('.flow');
   if (flow && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
