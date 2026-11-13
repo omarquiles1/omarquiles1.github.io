@@ -1,9 +1,15 @@
 {
   "items": [
     {
-      "kind": { "es": "Premio", "en": "Award" },
+      "kind": {
+        "es": "Premio",
+        "en": "Award"
+      },
       "date": "2026-10",
-      "title": { "es": "Ganadores de Hackea Avilés 2026", "en": "Winners of Hackea Avilés 2026" },
+      "title": {
+        "es": "Ganadores de Hackea Avilés 2026",
+        "en": "Winners of Hackea Avilés 2026"
+      },
       "text": {
         "es": "Con MapAvilés · Mapa Vivo de Avilés. Equipo: Román Pichurin, Albert Díaz, Camila Andrea Moreno Ortiz y yo. Una experiencia genial.",
         "en": "With MapAvilés · Avilés Live Map. Team: Román Pichurin, Albert Díaz, Camila Andrea Moreno Ortiz and me. A great experience."
@@ -11,20 +17,36 @@
       "href": ""
     },
     {
-      "kind": { "es": "Televisión", "en": "TV" },
+      "kind": {
+        "es": "Televisión",
+        "en": "TV"
+      },
       "date": "2026-10-26",
-      "title": { "es": "TVE Asturias · Panorama Regional", "en": "TVE Asturias · Panorama Regional" },
-      "text": { "es": "Explico el proyecto MapAvilés en el informativo regional.", "en": "I explain the MapAvilés project on the regional news." },
-      "href": "",
-      "_todo": "TODO: enlace al vídeo en RTVE Play."
+      "title": {
+        "es": "TVE Asturias · Panorama Regional",
+        "en": "TVE Asturias · Panorama Regional"
+      },
+      "text": {
+        "es": "Explico el proyecto MapAvilés en el informativo regional.",
+        "en": "I explain the MapAvilés project on the regional news."
+      },
+      "href": "https://www.rtve.es/play/videos/panorama-regional/panorama-regional-26-10-26/17283731/"
     },
     {
-      "kind": { "es": "Radio", "en": "Radio" },
-      "date": "2026-10",
-      "title": { "es": "COPE Avilés", "en": "COPE Avilés" },
-      "text": { "es": "Entrevista a mi compañera de equipo Camila Andrea Moreno Ortiz sobre MapAvilés.", "en": "Interview with my teammate Camila Andrea Moreno Ortiz about MapAvilés." },
-      "href": "",
-      "_todo": "TODO: enlace a la entrevista."
+      "kind": {
+        "es": "Radio",
+        "en": "Radio"
+      },
+      "date": "2026-10-27",
+      "title": {
+        "es": "COPE Avilés",
+        "en": "COPE Avilés"
+      },
+      "text": {
+        "es": "Entrevista a mi compañera de equipo Camila Andrea Moreno Ortiz sobre MapAvilés.",
+        "en": "Interview with my teammate Camila Andrea Moreno Ortiz about MapAvilés."
+      },
+      "href": "https://www.cope.es/emisoras/asturias/asturias-provincia/aviles/noticias/mapaviles-app-creada-estudiantes-reune-vistazo-oferta-ocio-ciudad-real-20261027_3463455.html"
     }
   ]
 }

@@ -122,15 +122,13 @@
           }
         }
       ],
-      "_todoGallery": "TODO: faltan materiales/buck/placa, osciloscopio y plecs (cualquier formato). Con ellas, node scripts/img.mjs buck y node scripts/render.mjs.",
       "team": {
-        "size": null,
+        "size": 6,
         "part": {
-          "es": null,
-          "en": null
+          "es": "participé en todas las fases, del cálculo y la simulación al montaje y las medidas, como el resto del equipo",
+          "en": "I took part in every stage, from sizing and simulation to assembly and measurements, like the rest of the team"
         }
       },
-      "_todoTeam": "TODO: número de personas del equipo y la parte de Omar (ES y EN). Hasta entonces la línea no se muestra.",
       "report": {
         "href": "/assets/docs/informe-buck.pdf"
       },
