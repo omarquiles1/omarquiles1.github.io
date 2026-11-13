@@ -157,15 +157,10 @@
         "IA"
       ],
       "links": [],
-      "thumb": "/assets/img/multiagente",
+      "thumb": "/assets/img/projects/multiagente-web",
       "thumbAlt": {
-        "es": "Siluetas de dos personas frente a un panel electrónico de cotizaciones de bolsa",
-        "en": "Silhouettes of two people in front of an electronic stock market board"
-      },
-      "credit": {
-        "text": "Foto: Kondo Atsushi · CC BY-SA 2.0",
-        "textEn": "Photo: Kondo Atsushi · CC BY-SA 2.0",
-        "href": "https://commons.wikimedia.org/wiki/File:Shinko_Securities%27s_electronic_stock_board_nearby_Yaesu_side_of_Tokyo_Station_in_March_2009.jpg"
+        "es": "Ilustración del sistema multiagente de gestión financiera: cuatro análisis (fundamental, técnico, sentimiento y riesgo) que se combinan en una recomendación enviada al móvil",
+        "en": "Illustration of the multi-agent financial management system: four analyses (fundamental, technical, sentiment and risk) combined into a recommendation sent to a phone"
       }
     }
   ],

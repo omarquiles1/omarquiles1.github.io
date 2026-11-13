@@ -150,14 +150,13 @@
         "en": "Colegio Internacional Meres (Asturias, Spain)"
       },
       "when": {
-        "es": "",
-        "en": ""
+        "es": "2021-2023",
+        "en": "2021-2023"
       },
       "note": {
         "es": "",
         "en": ""
-      },
-      "_todo": "TODO: años del Bachillerato en Meres (when.es y when.en)."
+      }
     }
   ]
 }
