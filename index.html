@@ -94,7 +94,16 @@
 
   <div class="wrap">
     <ul class="stats" role="list">
-      <li><strong>4.º</strong><span>curso de Ingeniería en Tecnologías Industriales</span></li><li><strong>10/10</strong><span>en Industrial Electronics (Gazi University)</span></li><li><strong>1.º</strong><span>puesto en Hackea Avilés 2026</span></li><li><strong>301 h</strong><span>de prácticas en una oficina técnica</span></li>
+      <li><a href="/#formacion" class="stat">
+        <span class="reg" aria-hidden="true"></span><svg viewBox="0 0 48 48" aria-hidden="true" class="stat-ic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 24 9l20 9-20 9L4 18Z"/><path d="M12 22v9c0 2.8 5.4 5 12 5s12-2.2 12-5v-9"/><path d="M44 18v11"/><circle cx="44" cy="31" r="1.6"/><path class="ic-dim" d="M4 42h40M4 40v4M44 40v4"/></svg>
+        <strong>4.º curso</strong><span class="stat-dim" aria-hidden="true"></span>
+        <span class="stat-label">Ingeniería en Tecnologías Industriales</span></a></li><li><a href="/#proyecto-mapaviles" class="stat">
+        <span class="reg" aria-hidden="true"></span><svg viewBox="0 0 48 48" aria-hidden="true" class="stat-ic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h16v10a8 8 0 0 1-16 0V7Z"/><path d="M16 10H9a6 6 0 0 0 7 7M32 10h7a6 6 0 0 1-7 7"/><path d="M24 25v6M18 36h12M20 31h8v5h-8z"/><path class="ic-dim" d="M10 42h28M10 40v4M38 40v4"/></svg>
+        <strong>1.º puesto</strong><span class="stat-dim" aria-hidden="true"></span>
+        <span class="stat-label">Hackea Avilés 2026</span></a></li><li><a href="/#experiencia" class="stat">
+        <span class="reg" aria-hidden="true"></span><svg viewBox="0 0 48 48" aria-hidden="true" class="stat-ic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="40" height="30" rx="1.5"/><path d="M4 12h40" class="ic-dim"/><path d="M8 26h10M24 26h12"/><path d="M18 21v10M24 21v10M17 21h2M17 31h2M23 21h2M23 31h2"/><path d="M28 18a6 6 0 0 1 12 0"/><path d="M26 18h16"/><path d="M34 12v3"/><path class="ic-dim" d="M4 42h40M4 40v4M44 40v4"/></svg>
+        <strong>Oficina + Planta</strong><span class="stat-dim" aria-hidden="true"></span>
+        <span class="stat-label">Experiencia en oficina técnica de instalaciones y en planta siderúrgica (ArcelorMittal)</span></a></li>
     </ul>
   </div>
 
@@ -180,7 +189,7 @@
         <button type="button" aria-pressed="false" data-filter="hardware">Hardware</button><button type="button" aria-pressed="false" data-filter="software">Software/IA</button>
       </div>
       <ul class="cards" role="list">
-      <li class="card" data-cat="software">
+      <li class="card" id="proyecto-mapaviles" data-cat="software">
         <!-- TODO: añadir el papel concreto de Omar en el equipo, las tecnologías usadas, capturas y el enlace a la demo de la app ciudadana. -->
         <div class="card-media media-photo"><picture>
           <source type="image/avif" srcset="/assets/img/mapaviles-web.avif">
@@ -191,15 +200,18 @@
           <p class="chips"><span class="chip">Software/IA</span><span class="chip chip-soft">Ganador · Hackea Avilés 2026</span></p>
           <h3>MapAvilés · Mapa Vivo de Avilés</h3>
           <p class="card-text">Gemelo digital de Avilés con el aforo en tiempo real de espacios culturales y eventos. Tiene tres partes: una app para la ciudadanía, un panel municipal para que el Ayuntamiento anticipe puntos críticos y la web pública. Proyecto de un equipo de cuatro personas.</p>
+          
+          
           <ul class="tags" role="list"><li>JavaScript</li><li>HTML/CSS</li><li>Three.js</li><li>Leaflet</li></ul>
           <div class="card-foot">
             <ul class="links" role="list"><li><a href="https://mapaviles.com/" rel="noopener">mapaviles.com<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li></ul>
+            
             <p class="meta"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Código privado</p>
           </div>
         </div>
       </li>
-      <li class="card" data-cat="hardware">
-        <!-- TODO: foto real del montaje (figura 6 del informe) cuando Omar decida cambiar las ilustraciones. -->
+      <li class="card" id="proyecto-buck" data-cat="hardware">
+        <!-- TODO: faltan materiales/buck/placa, osciloscopio y plecs (cualquier formato). Con ellas, node scripts/img.mjs buck y node scripts/render.mjs. --><!-- TODO: número de personas del equipo y la parte de Omar (ES y EN). Hasta entonces la línea no se muestra. --><!-- TODO: reportAvailable en true solo cuando los compañeros acepten publicar el informe y exista assets/docs/informe-buck.pdf. -->
         <div class="card-media media-buck"><svg viewBox="0 0 320 184" class="art" aria-hidden="true"><g class="ln"><path d="M30 60h50l14-12M110 60h20"/><circle cx="96" cy="60" r="2.5" class="dot"/><path d="M130 60c6-14 14-14 18 0s12 14 18 0 12-14 18 0 12 14 18 0"/><path d="M202 60h60v28M262 104v26M248 88h28M248 104h28"/><path d="M118 60v70M108 92l10-14 10 14ZM106 78h24"/><path d="M30 130h232M30 60v70"/></g>
     <g class="ac"><path d="M196 152h10v-12h12v12h10v-12h12v12h10v-12h12v12h10"/><path d="M40 150c10-18 20-18 30 0s20 18 30 0"/></g>
     <text x="30" y="44">V<tspan dy="3" font-size="9">in</tspan></text><text x="270" y="78">V<tspan dy="3" font-size="9">out</tspan></text><text x="146" y="44">L</text><text x="196" y="174">PWM · STM32</text></svg></div>
@@ -207,14 +219,17 @@
           <p class="chips"><span class="chip">Hardware</span><span class="chip chip-soft">Gazi University · Laboratorio</span></p>
           <h3>Convertidor buck síncrono con STM32</h3>
           <p class="card-text">Práctica de laboratorio de electrónica de potencia, en equipo. Dimensionamos un convertidor reductor síncrono de 15 V a 5 V (10 W, 100 kHz), lo simulamos en PLECS con un control PI, lo montamos con control digital desde un microcontrolador STM32 y verificamos las formas de onda con el osciloscopio.</p>
+          
+          
           <ul class="tags" role="list"><li>STM32</li><li>PLECS</li><li>Control PI</li><li>Osciloscopio</li></ul>
           <div class="card-foot">
+            
             
             <p class="meta"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Código privado</p>
           </div>
         </div>
       </li>
-      <li class="card" data-cat="software">
+      <li class="card" id="proyecto-multiagente" data-cat="software">
         
         <div class="card-media media-photo"><picture>
           <source type="image/avif" srcset="/assets/img/multiagente.avif">
@@ -225,8 +240,11 @@
           <p class="chips"><span class="chip">Software/IA</span><span class="chip chip-soft">En desarrollo</span></p>
           <h3>Sistema multiagente de gestión financiera</h3>
           <p class="card-text">Herramienta para apoyar decisiones de inversión personal con análisis automático, con prioridad en preservar el capital y evitar el exceso de operaciones.</p>
+          
+          
           <ul class="tags" role="list"><li>Python</li><li>IA</li></ul>
           <div class="card-foot">
+            
             
             <p class="meta"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Código privado</p>
           </div>
@@ -245,7 +263,7 @@
       <p class="lead">Mi laboratorio personal: ideas que estoy construyendo ahora mismo.</p>
     </header>
       <ul class="lab" role="list">
-        <li><p class="status">En desarrollo</p><h3>Megacerebro</h3><p>Asistente de IA personal para trabajar con varios modelos desde un mismo sitio y usar el más adecuado para cada tarea.</p></li><li><p class="status">En desarrollo</p><h3>Comunidades energéticas en Asturias</h3><p>Proyecto personal para impulsar comunidades energéticas locales en concejos asturianos, como Mieres.</p></li><li><p class="status">En desarrollo</p><h3>Gemelos digitales para la industria</h3><p>Prototipos en fase temprana para anticipar fallos en la industria pesada: el estado de las redes de tuberías, la fatiga de los componentes y la integridad de las estructuras.</p></li><li><p class="status">En desarrollo</p><h3>Cálculo de instalaciones y presupuestos</h3><p>Herramienta para agilizar los proyectos de protección contra incendios y fontanería, desde el cálculo hasta el presupuesto.</p></li><li><p class="status">En desarrollo</p><h3>Agentes y bots</h3><p>Asistentes de uso personal para organizarme con la universidad, el correo y mis proyectos.</p></li>
+        <li><p class="status">En desarrollo</p><h3>Orquesta</h3><p>Orquestador de IA multimodelo: un único punto de trabajo que reparte cada tarea al modelo más adecuado.</p></li><li><p class="status">En desarrollo</p><h3>Comunidades energéticas en Asturias</h3><p>Proyecto personal para impulsar comunidades energéticas locales en concejos asturianos, como Mieres.</p></li><li><p class="status">En desarrollo</p><h3>Gemelos digitales para la industria</h3><p>Prototipos en fase temprana para anticipar fallos en la industria pesada: el estado de las redes de tuberías, la fatiga de los componentes y la integridad de las estructuras.</p></li><li><p class="status">En desarrollo</p><h3>Cálculo de instalaciones y presupuestos</h3><p>Herramienta para agilizar los proyectos de protección contra incendios y fontanería, desde el cálculo hasta el presupuesto.</p></li><li><p class="status">En desarrollo</p><h3>Agentes y bots</h3><p>Asistentes de uso personal para organizarme con la universidad, el correo y mis proyectos.</p></li>
       </ul>
       <p class="note-line"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Por ahora el código no es público.</p>
     </div>
@@ -270,7 +288,7 @@
           <ul><li>Investigación sobre el comportamiento aerodinámico y estructural y la optimización de aerogeneradores de eje vertical (VAWT).</li><li>Modelado con un código de doble tubo de corriente (DMST) en MATLAB y polares aerodinámicas generadas con XFOIL automatizado desde Python.</li></ul>
         </li>
         <li class="tl-item">
-          <p class="when">verano 2026 · 301 h</p>
+          <p class="when">verano 2026</p>
           <h4>Prácticas en el departamento de ingeniería (oficina técnica de instalaciones)</h4>
           <p class="org">Runitec Ingenieros <span>· Asturias</span></p>
           <ul><li>Planos en AutoCAD de arquitectura e instalaciones, sobre todo para obra pública.</li><li>Primeras partidas de presupuesto con Presto y lectura de catálogos comerciales.</li><li>Cálculo de BIE (protección contra incendios), fontanería y saneamiento con programas específicos ejecutados en una máquina virtual (VirtualBox).</li><li>Apoyo en memorias y cálculos de instalaciones.</li></ul>
@@ -283,7 +301,7 @@
         </li></ol>
         </div>
         <div>
-          <h3 class="col-title"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg>Formación</h3>
+          <h3 class="col-title" id="formacion"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg>Formación</h3>
           <ol class="tl" role="list">
         <li class="tl-item">
           <p class="when">En curso · 4.º curso (2026-27)</p>
@@ -295,7 +313,7 @@
           <p class="when">2025-26</p>
           <h4>Erasmus+ · curso completo de 3.º</h4>
           <p class="org">Gazi University · Ankara, Turquía</p>
-          <p>Industrial Electronics: 10/10. Prácticas de electrónica de potencia con microcontroladores y PLCs.</p>
+          <p>Prácticas de electrónica de potencia con microcontroladores y PLCs.</p>
         </li>
         <li class="tl-item">
           
@@ -305,8 +323,8 @@
         </li>
         <li class="tl-item">
           
-          <h4>Antiguo alumno</h4>
-          <p class="org">Colegio Internacional Meres · Asturias</p>
+          <h4>Doble titulación de Bachillerato nacional y Bachillerato Internacional (IB)</h4>
+          <p class="org">Colegio Internacional Meres (Asturias)</p>
           
         </li></ol>
         </div>

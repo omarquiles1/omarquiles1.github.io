@@ -92,14 +92,50 @@
         "es": "Práctica de laboratorio de electrónica de potencia, en equipo. Dimensionamos un convertidor reductor síncrono de 15 V a 5 V (10 W, 100 kHz), lo simulamos en PLECS con un control PI, lo montamos con control digital desde un microcontrolador STM32 y verificamos las formas de onda con el osciloscopio.",
         "en": "Power electronics lab work, as a team. We sized a 15 V to 5 V synchronous step-down converter (10 W, 100 kHz), simulated it in PLECS with PI control, built it with digital control from an STM32 microcontroller and checked the waveforms on the oscilloscope."
       },
-      "_todo": "TODO: foto real del montaje (figura 6 del informe) cuando Omar decida cambiar las ilustraciones.",
       "tags": [
         "STM32",
         "PLECS",
         "Control PI",
         "Osciloscopio"
       ],
-      "links": []
+      "links": [],
+      "gallery": [
+        {
+          "file": "placa",
+          "alt": {
+            "es": "Placa del convertidor buck montada en el laboratorio",
+            "en": "Assembled buck converter board in the lab"
+          }
+        },
+        {
+          "file": "osciloscopio",
+          "alt": {
+            "es": "Formas de onda del convertidor buck en el osciloscopio",
+            "en": "Buck converter waveforms on the oscilloscope"
+          }
+        },
+        {
+          "file": "plecs",
+          "alt": {
+            "es": "Simulación del convertidor buck en PLECS",
+            "en": "Buck converter simulation in PLECS"
+          }
+        }
+      ],
+      "_todoGallery": "TODO: faltan materiales/buck/placa, osciloscopio y plecs (cualquier formato). Con ellas, node scripts/img.mjs buck y node scripts/render.mjs.",
+      "team": {
+        "size": null,
+        "part": {
+          "es": null,
+          "en": null
+        }
+      },
+      "_todoTeam": "TODO: número de personas del equipo y la parte de Omar (ES y EN). Hasta entonces la línea no se muestra.",
+      "report": {
+        "href": "/assets/docs/informe-buck.pdf"
+      },
+      "reportAvailable": false,
+      "_todoReport": "TODO: reportAvailable en true solo cuando los compañeros acepten publicar el informe y exista assets/docs/informe-buck.pdf."
     },
     {
       "id": "multiagente",
@@ -136,12 +172,12 @@
   "lab": [
     {
       "title": {
-        "es": "Megacerebro",
-        "en": "Megacerebro"
+        "es": "Orquesta",
+        "en": "Orquesta"
       },
       "text": {
-        "es": "Asistente de IA personal para trabajar con varios modelos desde un mismo sitio y usar el más adecuado para cada tarea.",
-        "en": "A personal AI assistant for working with several models in one place and using the right one for each task."
+        "es": "Orquestador de IA multimodelo: un único punto de trabajo que reparte cada tarea al modelo más adecuado.",
+        "en": "Multi-model AI orchestrator: one workspace that routes each task to the best-suited model."
       }
     },
     {

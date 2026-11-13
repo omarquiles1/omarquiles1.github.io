@@ -94,7 +94,16 @@
 
   <div class="wrap">
     <ul class="stats" role="list">
-      <li><strong>4.º</strong><span>year of Industrial Technologies Engineering</span></li><li><strong>10/10</strong><span>in Industrial Electronics (Gazi University)</span></li><li><strong>1.º</strong><span>place at Hackea Avilés 2026</span></li><li><strong>301 h</strong><span>of internship in an engineering office</span></li>
+      <li><a href="/en/#education" class="stat">
+        <span class="reg" aria-hidden="true"></span><svg viewBox="0 0 48 48" aria-hidden="true" class="stat-ic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 24 9l20 9-20 9L4 18Z"/><path d="M12 22v9c0 2.8 5.4 5 12 5s12-2.2 12-5v-9"/><path d="M44 18v11"/><circle cx="44" cy="31" r="1.6"/><path class="ic-dim" d="M4 42h40M4 40v4M44 40v4"/></svg>
+        <strong>4th year</strong><span class="stat-dim" aria-hidden="true"></span>
+        <span class="stat-label">Industrial Technologies Engineering</span></a></li><li><a href="/en/#project-mapaviles" class="stat">
+        <span class="reg" aria-hidden="true"></span><svg viewBox="0 0 48 48" aria-hidden="true" class="stat-ic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h16v10a8 8 0 0 1-16 0V7Z"/><path d="M16 10H9a6 6 0 0 0 7 7M32 10h7a6 6 0 0 1-7 7"/><path d="M24 25v6M18 36h12M20 31h8v5h-8z"/><path class="ic-dim" d="M10 42h28M10 40v4M38 40v4"/></svg>
+        <strong>1st place</strong><span class="stat-dim" aria-hidden="true"></span>
+        <span class="stat-label">Hackea Avilés 2026</span></a></li><li><a href="/en/#experience" class="stat">
+        <span class="reg" aria-hidden="true"></span><svg viewBox="0 0 48 48" aria-hidden="true" class="stat-ic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="40" height="30" rx="1.5"/><path d="M4 12h40" class="ic-dim"/><path d="M8 26h10M24 26h12"/><path d="M18 21v10M24 21v10M17 21h2M17 31h2M23 21h2M23 31h2"/><path d="M28 18a6 6 0 0 1 12 0"/><path d="M26 18h16"/><path d="M34 12v3"/><path class="ic-dim" d="M4 42h40M4 40v4M44 40v4"/></svg>
+        <strong>Office + Plant</strong><span class="stat-dim" aria-hidden="true"></span>
+        <span class="stat-label">Experience in a building-services engineering office and at a steel plant (ArcelorMittal)</span></a></li>
     </ul>
   </div>
 
@@ -180,7 +189,7 @@
         <button type="button" aria-pressed="false" data-filter="hardware">Hardware</button><button type="button" aria-pressed="false" data-filter="software">Software/AI</button>
       </div>
       <ul class="cards" role="list">
-      <li class="card" data-cat="software">
+      <li class="card" id="project-mapaviles" data-cat="software">
         <!-- TODO: añadir el papel concreto de Omar en el equipo, las tecnologías usadas, capturas y el enlace a la demo de la app ciudadana. -->
         <div class="card-media media-photo"><picture>
           <source type="image/avif" srcset="/assets/img/mapaviles-web.avif">
@@ -191,15 +200,18 @@
           <p class="chips"><span class="chip">Software/AI</span><span class="chip chip-soft">Winner · Hackea Avilés 2026</span></p>
           <h3>MapAvilés · Avilés Live Map</h3>
           <p class="card-text">A digital twin of Avilés showing real-time occupancy of cultural venues and events. It has three parts: an app for residents, a municipal dashboard so the City Council can anticipate hot spots, and the public website. Built by a team of four.</p>
+          
+          
           <ul class="tags" role="list"><li>JavaScript</li><li>HTML/CSS</li><li>Three.js</li><li>Leaflet</li></ul>
           <div class="card-foot">
             <ul class="links" role="list"><li><a href="https://mapaviles.com/" rel="noopener">mapaviles.com<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li></ul>
+            
             <p class="meta"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private code</p>
           </div>
         </div>
       </li>
-      <li class="card" data-cat="hardware">
-        <!-- TODO: foto real del montaje (figura 6 del informe) cuando Omar decida cambiar las ilustraciones. -->
+      <li class="card" id="project-buck" data-cat="hardware">
+        <!-- TODO: faltan materiales/buck/placa, osciloscopio y plecs (cualquier formato). Con ellas, node scripts/img.mjs buck y node scripts/render.mjs. --><!-- TODO: número de personas del equipo y la parte de Omar (ES y EN). Hasta entonces la línea no se muestra. --><!-- TODO: reportAvailable en true solo cuando los compañeros acepten publicar el informe y exista assets/docs/informe-buck.pdf. -->
         <div class="card-media media-buck"><svg viewBox="0 0 320 184" class="art" aria-hidden="true"><g class="ln"><path d="M30 60h50l14-12M110 60h20"/><circle cx="96" cy="60" r="2.5" class="dot"/><path d="M130 60c6-14 14-14 18 0s12 14 18 0 12-14 18 0 12 14 18 0"/><path d="M202 60h60v28M262 104v26M248 88h28M248 104h28"/><path d="M118 60v70M108 92l10-14 10 14ZM106 78h24"/><path d="M30 130h232M30 60v70"/></g>
     <g class="ac"><path d="M196 152h10v-12h12v12h10v-12h12v12h10v-12h12v12h10"/><path d="M40 150c10-18 20-18 30 0s20 18 30 0"/></g>
     <text x="30" y="44">V<tspan dy="3" font-size="9">in</tspan></text><text x="270" y="78">V<tspan dy="3" font-size="9">out</tspan></text><text x="146" y="44">L</text><text x="196" y="174">PWM · STM32</text></svg></div>
@@ -207,14 +219,17 @@
           <p class="chips"><span class="chip">Hardware</span><span class="chip chip-soft">Gazi University · Lab</span></p>
           <h3>Synchronous buck converter with STM32</h3>
           <p class="card-text">Power electronics lab work, as a team. We sized a 15 V to 5 V synchronous step-down converter (10 W, 100 kHz), simulated it in PLECS with PI control, built it with digital control from an STM32 microcontroller and checked the waveforms on the oscilloscope.</p>
+          
+          
           <ul class="tags" role="list"><li>STM32</li><li>PLECS</li><li>Control PI</li><li>Osciloscopio</li></ul>
           <div class="card-foot">
+            
             
             <p class="meta"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private code</p>
           </div>
         </div>
       </li>
-      <li class="card" data-cat="software">
+      <li class="card" id="project-multiagente" data-cat="software">
         
         <div class="card-media media-photo"><picture>
           <source type="image/avif" srcset="/assets/img/multiagente.avif">
@@ -225,8 +240,11 @@
           <p class="chips"><span class="chip">Software/AI</span><span class="chip chip-soft">In development</span></p>
           <h3>Multi-agent financial management system</h3>
           <p class="card-text">A tool that supports personal investment decisions with automated analysis, prioritising capital preservation and avoiding overtrading.</p>
+          
+          
           <ul class="tags" role="list"><li>Python</li><li>IA</li></ul>
           <div class="card-foot">
+            
             
             <p class="meta"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private code</p>
           </div>
@@ -245,7 +263,7 @@
       <p class="lead">My personal lab: ideas I am building right now.</p>
     </header>
       <ul class="lab" role="list">
-        <li><p class="status">In development</p><h3>Megacerebro</h3><p>A personal AI assistant for working with several models in one place and using the right one for each task.</p></li><li><p class="status">In development</p><h3>Energy communities in Asturias</h3><p>A personal project to promote local energy communities in Asturian municipalities such as Mieres.</p></li><li><p class="status">In development</p><h3>Digital twins for industry</h3><p>Early-stage prototypes to anticipate failures in heavy industry: the condition of piping networks, component fatigue and structural integrity.</p></li><li><p class="status">In development</p><h3>Building-services calculation and budgets</h3><p>A tool to speed up fire-protection and water-supply projects, from calculation to budget.</p></li><li><p class="status">In development</p><h3>Agents and bots</h3><p>Personal assistants that help me stay on top of university, email and my projects.</p></li>
+        <li><p class="status">In development</p><h3>Orquesta</h3><p>Multi-model AI orchestrator: one workspace that routes each task to the best-suited model.</p></li><li><p class="status">In development</p><h3>Energy communities in Asturias</h3><p>A personal project to promote local energy communities in Asturian municipalities such as Mieres.</p></li><li><p class="status">In development</p><h3>Digital twins for industry</h3><p>Early-stage prototypes to anticipate failures in heavy industry: the condition of piping networks, component fatigue and structural integrity.</p></li><li><p class="status">In development</p><h3>Building-services calculation and budgets</h3><p>A tool to speed up fire-protection and water-supply projects, from calculation to budget.</p></li><li><p class="status">In development</p><h3>Agents and bots</h3><p>Personal assistants that help me stay on top of university, email and my projects.</p></li>
       </ul>
       <p class="note-line"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>For now the code is not public.</p>
     </div>
@@ -270,7 +288,7 @@
           <ul><li>Research on the aerodynamic and structural behaviour and the optimisation of vertical axis wind turbines (VAWT).</li><li>Modelling with a double-multiple streamtube (DMST) code in MATLAB and aerodynamic polars generated with XFOIL automated from Python.</li></ul>
         </li>
         <li class="tl-item">
-          <p class="when">Summer 2026 · 301 h</p>
+          <p class="when">Summer 2026</p>
           <h4>Engineering intern (building-services engineering office)</h4>
           <p class="org">Runitec Ingenieros <span>· Asturias</span></p>
           <ul><li>AutoCAD drawings of architecture and building services, mainly for public works.</li><li>First budget items in Presto and reading of manufacturers' catalogues.</li><li>Fire hose reel (BIE) fire-protection, water supply and drainage calculations with dedicated programs run in a virtual machine (VirtualBox).</li><li>Support with technical reports and building-services calculations.</li></ul>
@@ -283,7 +301,7 @@
         </li></ol>
         </div>
         <div>
-          <h3 class="col-title"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg>Education</h3>
+          <h3 class="col-title" id="education"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg>Education</h3>
           <ol class="tl" role="list">
         <li class="tl-item">
           <p class="when">In progress · 4th year (2026-27)</p>
@@ -295,7 +313,7 @@
           <p class="when">2025-26</p>
           <h4>Erasmus+ · full 3rd year</h4>
           <p class="org">Gazi University · Ankara, Turkey</p>
-          <p>Industrial Electronics: 10/10. Power electronics lab work with microcontrollers and PLCs.</p>
+          <p>Power electronics lab work with microcontrollers and PLCs.</p>
         </li>
         <li class="tl-item">
           
@@ -305,8 +323,8 @@
         </li>
         <li class="tl-item">
           
-          <h4>Alumnus</h4>
-          <p class="org">Colegio Internacional Meres · Asturias</p>
+          <h4>Dual diploma: Spanish Bachillerato and International Baccalaureate (IB)</h4>
+          <p class="org">Colegio Internacional Meres (Asturias, Spain)</p>
           
         </li></ol>
         </div>

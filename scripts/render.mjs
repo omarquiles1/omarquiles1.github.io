@@ -1,6 +1,6 @@
 // Genera las páginas estáticas a partir de data/*.json.
 // Uso: node scripts/render.mjs   (sin dependencias; GitHub Pages sirve el resultado tal cual)
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -35,6 +35,7 @@ const UI = {
       stack: 'Lo que uso para calcular, programar y construir.'
     },
     findMe: 'Encuéntrame en', all: 'Todos', filter: 'Filtrar por categoría', ongoing: 'En desarrollo', ongoingResearch: 'Investigación en curso',
+    report: 'Ver informe (PDF)', team: (n, part) => `Trabajo en equipo de ${n} personas; mi parte: ${part}.`,
     privateCode: 'Código privado', generic: 'Trabajo de prácticas · descripción genérica',
     labNote: 'Por ahora el código no es público.',
     contactTitle: '¿Hablamos?', contactText: 'Si te interesa algo de lo que hago, la forma más rápida de hablar conmigo es el correo. También estoy en LinkedIn.',
@@ -55,6 +56,7 @@ const UI = {
       stack: 'What I use to calculate, code and build.'
     },
     findMe: 'Find me on', all: 'All', filter: 'Filter by category', ongoing: 'In development', ongoingResearch: 'Ongoing research',
+    report: 'View report (PDF)', team: (n, part) => `Team project of ${n} people; my part: ${part}.`,
     privateCode: 'Private code', generic: 'Internship work · generic description',
     labNote: 'For now the code is not public.',
     contactTitle: "Let's talk", contactText: 'If something I do interests you, email is the fastest way to reach me. I am also on LinkedIn.',
@@ -91,6 +93,17 @@ const ICON = {
   download: stroke('<path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/>')
 };
 const STACK_ICONS = ['ruler', 'code', 'cpu', 'spark'];
+
+// Iconos de las tarjetas del hero: trazo de plano (48×48), dibujados aquí, sin librerías.
+const blueprint = (d) => `<svg viewBox="0 0 48 48" aria-hidden="true" class="stat-ic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const STAT_ICON = {
+  // Birrete con borla
+  cap: blueprint('<path d="M4 18 24 9l20 9-20 9L4 18Z"/><path d="M12 22v9c0 2.8 5.4 5 12 5s12-2.2 12-5v-9"/><path d="M44 18v11"/><circle cx="44" cy="31" r="1.6"/><path class="ic-dim" d="M4 42h40M4 40v4M44 40v4"/>'),
+  // Trofeo con peana
+  trophy: blueprint('<path d="M16 7h16v10a8 8 0 0 1-16 0V7Z"/><path d="M16 10H9a6 6 0 0 0 7 7M32 10h7a6 6 0 0 1-7 7"/><path d="M24 25v6M18 36h12M20 31h8v5h-8z"/><path class="ic-dim" d="M10 42h28M10 40v4M38 40v4"/>'),
+  // Plano con un tramo de tubería con bridas y casco de obra
+  plant: blueprint('<rect x="4" y="6" width="40" height="30" rx="1.5"/><path d="M4 12h40" class="ic-dim"/><path d="M8 26h10M24 26h12"/><path d="M18 21v10M24 21v10M17 21h2M17 31h2M23 21h2M23 31h2"/><path d="M28 18a6 6 0 0 1 12 0"/><path d="M26 18h16"/><path d="M34 12v3"/><path class="ic-dim" d="M4 42h40M4 40v4M44 40v4"/>')
+};
 
 // ── Líneas de corriente: flujo potencial alrededor de un cilindro ──────────
 // ψ = U·y·(1 − R²/r²). Para cada valor de ψ se resuelve y(x) por bisección.
@@ -246,6 +259,9 @@ function home(L) {
   const cv = profile.cv.available
     ? a(profile.cv[L], `${ICON.download}${u.ctaCv}`, 'btn btn-ghost')
     : '<!-- TODO: CV oculto hasta que existan assets/cv/CV_Omar_Quiles_ES.pdf y _EN.pdf (profile.json → cv.available) -->';
+  const eduId = L === 'es' ? 'formacion' : 'education';
+  const projAnchor = (pid) => `${L === 'es' ? 'proyecto' : 'project'}-${pid}`;
+  const statTarget = { edu: eduId, exp: id.exp, mapaviles: projAnchor('mapaviles') };
   const handle = (url) => decodeURIComponent(url.replace(/\/$/, '').split('/').pop());
 
   const thumb = (p) => p.thumb
@@ -256,17 +272,27 @@ function home(L) {
         </picture>`
     : art(p.art);
 
+  const gallery = (p) => {
+    if (!p.gallery?.length) return '';
+    const files = p.gallery.map((g) => ({ ...g, src: `/assets/img/projects/${p.id}-${g.file}` }));
+    if (!files.every((g) => existsSync(join(ROOT, `${g.src.slice(1)}.webp`)))) return '';
+    return `<ul class="gallery" role="list">${files.map((g) => `<li><picture><source type="image/avif" srcset="${g.src}.avif"><source type="image/webp" srcset="${g.src}.webp"><img src="${g.src}.jpg" width="480" height="320" loading="lazy" decoding="async" alt="${esc(g.alt[L])}"></picture></li>`).join('')}</ul>`;
+  };
+
   const card = (p) => `
-      <li class="card" data-cat="${p.category}">
-        ${p._todo ? `<!-- ${esc(p._todo)} -->` : ''}
+      <li class="card" id="${projAnchor(p.id)}" data-cat="${p.category}">
+        ${[p._todo, p._todoGallery && !gallery(p) ? p._todoGallery : '', p._todoTeam && !p.team?.size ? p._todoTeam : '', p._todoReport && !p.reportAvailable ? p._todoReport : ''].filter(Boolean).map((x) => `<!-- ${esc(x)} -->`).join('')}
         <div class="card-media media-${p.art || 'photo'}">${thumb(p)}${p.credit ? a(p.credit.href, esc(L === 'es' ? p.credit.text : p.credit.textEn), 'credit') : ''}</div>
         <div class="card-body">
           <p class="chips"><span class="chip">${esc(proj.categories[p.category][L])}</span>${p.badge ? `<span class="chip chip-soft">${esc(p.badge[L])}</span>` : ''}</p>
           <h3>${esc(p.title[L])}</h3>
           <p class="card-text">${esc(p.text[L])}</p>
+          ${p.team?.size && p.team.part?.[L] ? `<p class="team-line">${esc(u.team(p.team.size, p.team.part[L]))}</p>` : ''}
+          ${gallery(p)}
           ${p.tags?.length ? `<ul class="tags" role="list">${p.tags.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
           <div class="card-foot">
             ${p.links?.length ? `<ul class="links" role="list">${p.links.map((l) => `<li>${a(l.href, `${esc(l.label[L])}${ICON.ext}`)}</li>`).join('')}</ul>` : ''}
+            ${p.reportAvailable && p.report?.href ? `<p class="report">${a(p.report.href, `${ICON.download}${u.report}`, 'btn-report')}</p>` : ''}
             <p class="meta">${p.category === 'instalaciones' ? `${ICON.brief}${u.generic}` : `${ICON.lock}${u.privateCode}`}</p>
           </div>
         </div>
@@ -329,7 +355,10 @@ ${topbar(L, base, alt)}
 
   <div class="wrap">
     <ul class="stats" role="list">
-      ${profile.stats.map((s) => `<li><strong>${esc(s.value)}</strong><span>${esc(s.label[L])}</span></li>`).join('')}
+      ${profile.stats.map((s) => `<li>${a(`${base}#${statTarget[s.target]}`, `
+        <span class="reg" aria-hidden="true"></span>${STAT_ICON[s.icon]}
+        <strong>${esc(s.value[L])}</strong><span class="stat-dim" aria-hidden="true"></span>
+        <span class="stat-label">${esc(s.label[L])}</span>`, 'stat')}</li>`).join('')}
     </ul>
   </div>
 
@@ -409,7 +438,7 @@ ${topbar(L, base, alt)}
           <ol class="tl" role="list">${tl(exp.experience, 'exp')}</ol>
         </div>
         <div>
-          <h3 class="col-title">${ICON.cap}${u.sec.edu}</h3>
+          <h3 class="col-title" id="${eduId}">${ICON.cap}${u.sec.edu}</h3>
           <ol class="tl" role="list">${tl(exp.education, 'edu')}</ol>
         </div>
       </div>
